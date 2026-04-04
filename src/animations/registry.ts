@@ -37,6 +37,7 @@ import { BottomBarSkia } from './bottom-bar-skia';
 import { CalendarDays } from './calendar-days';
 import { CardShaderReflections } from './card-shader-reflections';
 import { CheckboxInteractions } from './checkbox-interactions';
+import { CherryBlossomQRCode } from './cherry-blossom-qrcode';
 import { CircularCarousel } from './circular-carousel';
 import { ClerkToast } from './clerk-toast';
 import { ClockTimePicker } from './clock-time-picker';
@@ -251,6 +252,7 @@ export const AnimationRegistry = {
   'scrollable-shapes': ScrollableShapes,
   'notion-qrcode': NotionQRCode,
   'github-terrain': GitHubTerrain,
+  'cherry-blossom-qrcode': CherryBlossomQRCode,
 } as const;
 
 export const AnimationMetadata: Record<string, AnimationMetadataType> = {
@@ -849,6 +851,11 @@ export const AnimationMetadata: Record<string, AnimationMetadataType> = {
     name: 'GitHub Terrain',
     route: 'GitHubTerrain',
     iconName: 'logo-github',
+  },
+  'cherry-blossom-qrcode': {
+    name: 'Cherry Blossom QR',
+    route: 'CherryBlossomQRCode',
+    iconName: 'flower-outline',
   },
 } as const;
 
